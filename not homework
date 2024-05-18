@@ -1,0 +1,12 @@
+def print_array(arr, message):
+    print(message, ' '.join(map(str, arr)))
+
+if __name__ == "__main__":
+    user_input = input("請輸入要排序的數字，以空格分隔: ")
+    arr = list(map(int, user_input.split()))
+
+    print_array(arr, "未排序數組:")
+
+    arr.sort() 
+
+    print_array(arr, "已排序數組:")
